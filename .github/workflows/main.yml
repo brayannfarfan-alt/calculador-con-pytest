@@ -1,0 +1,12 @@
+name: CI TalentoLab # Nombre descriptivo del workflow
+on: # EVENTOS: cuándo se ejecuta
+ push:
+ branches: [ main, develop ]
+ pull_request:
+ branches: [ main, develop ]
+jobs:
+ test: # JOB principal
+ runs-on: ubuntu-latest # RUNNER: máquina Ubuntu
+ env: # VARIABLES de entorno
+ PYTHON_VERSION: '3.12'
+ PIP_CACHE: ~/.cache/pip
