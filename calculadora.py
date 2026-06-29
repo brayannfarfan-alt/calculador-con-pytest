@@ -7,6 +7,8 @@ while True:
     a = pedir_numero("Ingresa primer numero")
     b = pedir_numero("Ingresa segundo numero")
 
+    print("Hola mundo")
+
     match opcion:
         case "1":
             print("Resultado ", sumar(a,b) )
